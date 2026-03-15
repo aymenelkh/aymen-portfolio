@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aymen | Travel & Creator Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #f4f1ea; 
+            color: #2a3025; 
+        }
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.5); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(163, 184, 158, 0.3); 
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+        }
+        .temu-card { 
+            background: linear-gradient(135deg, #d8c3af 0%, #a3b89e 100%); 
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-10 px-4 relative">
+
+    <!-- Toast Notification (Message Box) -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-[#839e7e] text-white px-4 py-3 rounded-xl shadow-lg transform translate-y-20 opacity-0 transition-all duration-300 z-50 pointer-events-none flex items-center gap-2">
+        <i class="fas fa-check-circle"></i> <span id="toast-text">Email copied!</span>
+    </div>
+
+    <!-- Language Switcher Button -->
+    <div class="absolute top-4 right-4 md:right-10 z-10">
+        <button id="lang-btn" class="glass-card text-xs text-[#5c6654] font-bold py-1 px-3 rounded-full hover:bg-white/80 transition cursor-pointer">
+            🇫🇷 FR
+        </button>
+    </div>
+
+    <!-- Profile Picture & Name -->
+    <div class="max-w-md w-full flex flex-col items-center text-center mb-2">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200&h=200" alt="Aymen Profile" class="w-32 h-32 rounded-full object-cover border-4 border-[#a3b89e] mb-4 shadow-lg shadow-[#a3b89e]/30">
+        <h1 class="text-3xl font-bold mb-2 text-[#2a3025]">Aymen Elkh 🌍</h1>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- ENGLISH CONTENT SECTION                        -->
+    <!-- ============================================== -->
+    <div id="content-en" class="w-full flex flex-col items-center max-w-md transition-opacity duration-300">
+        
+        <p class="text-[#5c6654] mb-4 text-sm px-4 text-center">Moroccan based in 🇩🇪. Visited 17 countries and counting... The whole world is next! CEO of Chaos 🌪️</p>
+        
+        <!-- Social Icons -->
+        <div class="flex space-x-4 mb-6">
+            <a href="https://instagram.com/aymen.elkh" target="_blank" class="text-2xl text-[#a3b89e] hover:text-[#d8c3af] transition"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/491738738633" target="_blank" class="text-2xl text-[#a3b89e] hover:text-[#d8c3af] transition"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="copy-email-btn text-2xl text-[#a3b89e] hover:text-[#d8c3af] transition"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <!-- 4 Stats Section (Updated with PDF Data) -->
+        <div class="w-full grid grid-cols-2 gap-3 mb-4">
+            <div class="glass-card p-4 rounded-xl text-center">
+                <h3 class="text-xl font-bold text-[#839e7e]">17</h3>
+                <p class="text-xs text-[#5c6654] mt-1">Countries</p>
+            </div>
+            <div class="glass-card p-4 rounded-xl text-center">
+                <h3 class="text-xl font-bold text-[#839e7e]">2.2M+</h3>
+                <p class="text-xs text-[#5c6654] mt-1">Views (30d)</p>
+            </div>
+            <div class="glass-card p-4 rounded-xl text-center">
+                <h3 class="text-xl font-bold text-[#839e7e]">1.3M+</h3>
+                <p class="text-xs text-[#5c6654] mt-1">Accounts Reached</p>
+            </div>
+            <div class="glass-card p-4 rounded-xl text-center">
+                <h3 class="text-xl font-bold text-[#839e7e]">76K+</h3>
+                <p class="text-xs text-[#5c6654] mt-1">Interactions</p>
+            </div>
+        </div>
+
+        <!-- Media Kit / PDF Banner (EN) -->
+        <a href="dashboard_aymen.pdf" target="_blank" class="block w-full bg-[#2a3025] hover:bg-[#495241] text-white font-semibold py-4 px-6 rounded-xl text-center transition flex items-center justify-between mb-8 shadow-md border border-[#a3b89e]/30">
+            <div class="flex items-center">
+                <i class="fas fa-chart-bar text-[#a3b89e] text-xl w-6"></i>
+                <span class="ml-3 text-sm">View Instagram Analytics (PDF)</span>
+            </div>
+            <i class="fas fa-external-link-alt text-xs text-[#839e7e]"></i>
+        </a>
+
+        <!-- Temu Deals Section -->
+        <div class="w-full temu-card p-6 rounded-2xl mb-8 shadow-lg shadow-[#a3b89e]/20 text-center">
+            <h2 class="text-xl font-bold text-[#2a3025] mb-2"><i class="fas fa-gift mr-2 text-[#2a3025]"></i> Exclusive Temu Deals</h2>
+            <p class="text-sm text-[#495241] mb-5">Take advantage of the best discounts and free gifts on anything you want from Temu. Use these codes and shop for less:</p>
+            
+            <a href="https://temu.to/k/e0c40fop2u0" target="_blank" class="block w-full bg-white text-[#839e7e] font-bold py-3 px-4 rounded-xl transition hover:scale-105 mb-3 shadow-sm">
+                🎟️ 30% OFF | Code: <span class="bg-[#f4f1ea] px-2 py-1 rounded border border-[#a3b89e]/30">ale003699</span>
+            </a>
+            <a href="https://temu.to/k/e41axayzjxm" target="_blank" class="block w-full bg-[#2a3025] text-white font-bold py-3 px-4 rounded-xl transition hover:scale-105 shadow-sm">
+                🎁 FREE Gift (0€) | Code: <span class="bg-[#495241] px-2 py-1 rounded border border-[#5c6654]">alg183606</span>
+            </a>
+        </div>
+
+        <!-- My Gear Section -->
+        <div class="w-full glass-card p-5 rounded-2xl mb-8">
+            <h2 class="text-lg font-semibold border-b border-[#a3b89e]/30 pb-2 mb-4 text-[#2a3025]"><i class="fas fa-video text-[#839e7e] mr-2"></i> My Gear</h2>
+            <ul class="text-sm text-[#495241] space-y-2">
+                <li><i class="fas fa-check text-[#839e7e] mr-2"></i> Canon Camera (Professional Stills & Video)</li>
+                <li><i class="fas fa-check text-[#839e7e] mr-2"></i> iPhone 17 Pro Max & 16 Pro Max</li>
+                <li><i class="fas fa-check text-[#839e7e] mr-2"></i> DJI Mini 4 Pro (Cinematic)</li>
+                <li><i class="fas fa-check text-[#839e7e] mr-2"></i> DJI Avata 2 (Immersive FPV)</li>
+                <li><i class="fas fa-check text-[#839e7e] mr-2"></i> Insta360 (Action)</li>
+            </ul>
+        </div>
+
+        <!-- Travel Couple Section (Vany) -->
+        <div class="w-full glass-card p-5 rounded-2xl mb-8">
+            <h2 class="text-lg font-semibold border-b border-[#a3b89e]/30 pb-2 mb-4 text-[#2a3025]"><i class="fas fa-heart text-[#d8c3af] mr-2"></i> Travel Couple Content</h2>
+            <p class="text-xs text-[#5c6654] mb-4">Discover our content and travel articles (in German and English):</p>
+            <div class="space-y-3">
+                <a href="https://www.instagram.com/vanymentravels/" target="_blank" class="block w-full bg-white/40 hover:bg-white/80 text-[#2a3025] font-semibold py-3 px-4 rounded-xl transition flex items-center justify-between border border-[#d8c3af]/50">
+                    <div class="flex items-center">
+                        <i class="fab fa-instagram text-[#d8c3af] text-xl w-6"></i>
+                        <span class="ml-3 text-sm">Vany's Instagram</span>
+                    </div>
+                    <i class="fas fa-external-link-alt text-xs text-[#839e7e]"></i>
+                </a>
+                <a href="https://www.vanymentravels.com/" target="_blank" class="block w-full bg-white/40 hover:bg-white/80 text-[#2a3025] font-semibold py-3 px-4 rounded-xl transition flex items-center justify-between border border-[#a3b89e]/50">
+                    <div class="flex items-center">
+                        <i class="fas fa-globe text-[#a3b89e] text-xl w-6"></i>
+                        <span class="ml-3 text-sm">VanyMen Travels Blog</span>
+                    </div>
+                    <i class="fas fa-external-link-alt text-xs text-[#839e7e]"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Other Links Section -->
+        <div class="w-full space-y-4">
+            <a href="https://wa.me/491738738633" target="_blank" class="block w-full glass-card hover:bg-white/80 text-[#2a3025] font-semibold py-4 px-6 rounded-xl text-center transition flex items-center justify-between border border-[#839e7e]/40">
+                <span>💬 Chat on WhatsApp</span>
+                <i class="fab fa-whatsapp text-[#839e7e]"></i>
+            </a>
+            <a href="#" class="copy-email-btn block w-full glass-card hover:bg-white/80 text-[#2a3025] font-semibold py-4 px-6 rounded-xl text-center transition flex items-center justify-between border border-[#d8c3af]/50">
+                <span>🤝 Let's Collaborate</span>
+                <i class="fas fa-envelope text-[#d8c3af]"></i>
+            </a>
+        </div>
+
+        <div class="mt-10 text-[#a3b89e] text-xs text-center w-full">
+            © 2026 Aymen Elkh. All rights reserved.
+        </div>
+    </div>
+
+
+    <!-- ============================================== -->
+    <!-- FRENCH CONTENT SECTION (Hidden by default)     -->
+    <!-- ============================================== -->
+    <div id="content-fr" class="hidden w-full flex flex-col items-center max-w-md transition-opacity duration-300">
+        
+        <p class="text-[#5c6654] mb-4 text-sm px-4 text-center">Marocain basé en 🇩🇪. A visité 17 pays et ce n'est pas fini... Le monde entier est la prochaine étape ! CEO du Chaos 🌪️</p>
+        
+        <!-- Social Icons -->
+        <div class="flex space-x-4 mb-6">
+            <a href="https://instagram.com/aymen.elkh" target="_blank" class="text-2xl text-[#a3b89e] hover:text-[#d8c3af] transition"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/491738738633" target="_blank" class="text-2xl text-[#a3b89e] hover:text-[#d8c3af] transition"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="copy-email-btn text-2xl text-[#a3b89e] hover:text-[#d8c3af] transition"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <!-- 4 Stats Section (Updated with PDF Data) -->
+        <div class="w-full grid grid-cols-2 gap-3 mb-4">
+            <div class="glass-card p-4 rounded-xl text-center">
+                <h3 class="text-xl font-bold text-[#839e7e]">17</h3>
+                <p class="text-xs text-[#5c6654] mt-1">Pays</p>
+            </div>
+            <div class="glass-card p-4 rounded-xl text-center">
+                <h3 class="text-xl font-bold text-[#839e7e]">2.2M+</h3>
+                <p class="text-xs text-[#5c6654] mt-1">Vues (30j)</p>
+            </div>
+            <div class="glass-card p-4 rounded-xl text-center">
+                <h3 class="text-xl font-bold text-[#839e7e]">1.3M+</h3>
+                <p class="text-xs text-[#5c6654] mt-1">Comptes Touchés</p>
+            </div>
+            <div class="glass-card p-4 rounded-xl text-center">
+                <h3 class="text-xl font-bold text-[#839e7e]">76K+</h3>
+                <p class="text-xs text-[#5c6654] mt-1">Interactions</p>
+            </div>
+        </div>
+
+        <!-- Media Kit / PDF Banner (FR) -->
+        <a href="dashboard_aymen.pdf" target="_blank" class="block w-full bg-[#2a3025] hover:bg-[#495241] text-white font-semibold py-4 px-6 rounded-xl text-center transition flex items-center justify-between mb-8 shadow-md border border-[#a3b89e]/30">
+            <div class="flex items-center">
+                <i class="fas fa-chart-pie text-[#a3b89e] text-xl w-6"></i>
+                <span class="ml-3 text-sm">Voir les Statistiques (PDF)</span>
+            </div>
+            <i class="fas fa-external-link-alt text-xs text-[#839e7e]"></i>
+        </a>
+
+        <!-- Temu Deals Section -->
+        <div class="w-full temu-card p-6 rounded-2xl mb-8 shadow-lg shadow-[#a3b89e]/20 text-center">
+            <h2 class="text-xl font-bold text-[#2a3025] mb-2"><i class="fas fa-gift mr-2 text-[#2a3025]"></i> Offres Exclusives Temu</h2>
+            <p class="text-sm text-[#495241] mb-5">Profitez des meilleures réductions et de cadeaux gratuits sur tout ce que vous voulez chez Temu. Utilisez ces codes et achetez à prix réduit :</p>
+            
+            <a href="https://temu.to/k/e0c40fop2u0" target="_blank" class="block w-full bg-white text-[#839e7e] font-bold py-3 px-4 rounded-xl transition hover:scale-105 mb-3 shadow-sm">
+                🎟️ -30% Réduction | Code: <span class="bg-[#f4f1ea] px-2 py-1 rounded border border-[#a3b89e]/30">ale003699</span>
+            </a>
+            <a href="https://temu.to/k/e41axayzjxm" target="_blank" class="block w-full bg-[#2a3025] text-white font-bold py-3 px-4 rounded-xl transition hover:scale-105 shadow-sm">
+                🎁 Cadeau Gratuit (0€) | Code: <span class="bg-[#495241] px-2 py-1 rounded border border-[#5c6654]">alg183606</span>
+            </a>
+        </div>
+
+        <!-- My Gear Section -->
+        <div class="w-full glass-card p-5 rounded-2xl mb-8">
+            <h2 class="text-lg font-semibold border-b border-[#a3b89e]/30 pb-2 mb-4 text-[#2a3025]"><i class="fas fa-video text-[#839e7e] mr-2"></i> Mon Équipement</h2>
+            <ul class="text-sm text-[#495241] space-y-2">
+                <li><i class="fas fa-check text-[#839e7e] mr-2"></i> Appareil Photo Canon (Photos & Vidéos Pro)</li>
+                <li><i class="fas fa-check text-[#839e7e] mr-2"></i> iPhone 17 Pro Max & 16 Pro Max</li>
+                <li><i class="fas fa-check text-[#839e7e] mr-2"></i> DJI Mini 4 Pro (Cinematic)</li>
+                <li><i class="fas fa-check text-[#839e7e] mr-2"></i> DJI Avata 2 (Immersive FPV)</li>
+                <li><i class="fas fa-check text-[#839e7e] mr-2"></i> Insta360 (Action)</li>
+            </ul>
+        </div>
+
+        <!-- Travel Couple Section (Vany) -->
+        <div class="w-full glass-card p-5 rounded-2xl mb-8">
+            <h2 class="text-lg font-semibold border-b border-[#a3b89e]/30 pb-2 mb-4 text-[#2a3025]"><i class="fas fa-heart text-[#d8c3af] mr-2"></i> Contenu de Couple</h2>
+            <p class="text-xs text-[#5c6654] mb-4">Découvrez notre contenu et nos articles de voyage (en allemand et anglais) :</p>
+            <div class="space-y-3">
+                <a href="https://www.instagram.com/vanymentravels/" target="_blank" class="block w-full bg-white/40 hover:bg-white/80 text-[#2a3025] font-semibold py-3 px-4 rounded-xl transition flex items-center justify-between border border-[#d8c3af]/50">
+                    <div class="flex items-center">
+                        <i class="fab fa-instagram text-[#d8c3af] text-xl w-6"></i>
+                        <span class="ml-3 text-sm">Instagram de Vany</span>
+                    </div>
+                    <i class="fas fa-external-link-alt text-xs text-[#839e7e]"></i>
+                </a>
+                <a href="https://www.vanymentravels.com/" target="_blank" class="block w-full bg-white/40 hover:bg-white/80 text-[#2a3025] font-semibold py-3 px-4 rounded-xl transition flex items-center justify-between border border-[#a3b89e]/50">
+                    <div class="flex items-center">
+                        <i class="fas fa-globe text-[#a3b89e] text-xl w-6"></i>
+                        <span class="ml-3 text-sm">Blog VanyMen Travels</span>
+                    </div>
+                    <i class="fas fa-external-link-alt text-xs text-[#839e7e]"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Other Links Section -->
+        <div class="w-full space-y-4">
+            <a href="https://wa.me/491738738633" target="_blank" class="block w-full glass-card hover:bg-white/80 text-[#2a3025] font-semibold py-4 px-6 rounded-xl text-center transition flex items-center justify-between border border-[#839e7e]/40">
+                <span>💬 Discuter sur WhatsApp</span>
+                <i class="fab fa-whatsapp text-[#839e7e]"></i>
+            </a>
+            <a href="#" class="copy-email-btn block w-full glass-card hover:bg-white/80 text-[#2a3025] font-semibold py-4 px-6 rounded-xl text-center transition flex items-center justify-between border border-[#d8c3af]/50">
+                <span>🤝 Collaborons Ensemble</span>
+                <i class="fas fa-envelope text-[#d8c3af]"></i>
+            </a>
+        </div>
+
+        <div class="mt-10 text-[#a3b89e] text-xs text-center w-full">
+            © 2026 Aymen Elkh. Tous droits réservés.
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT: Bach ytbdel lougha blama ytcharger l'site -->
+    <script>
+        const langBtn = document.getElementById('lang-btn');
+        const contentEn = document.getElementById('content-en');
+        const contentFr = document.getElementById('content-fr');
+        let currentLang = 'en';
+
+        langBtn.addEventListener('click', () => {
+            if (currentLang === 'en') {
+                contentEn.classList.add('hidden');
+                contentFr.classList.remove('hidden');
+                langBtn.innerText = '🇬🇧 EN';
+                currentLang = 'fr';
+            } else {
+                contentFr.classList.add('hidden');
+                contentEn.classList.remove('hidden');
+                langBtn.innerText = '🇫🇷 FR';
+                currentLang = 'en';
+            }
+        });
+
+        // Copy Email to Clipboard Logic
+        const copyEmailBtns = document.querySelectorAll('.copy-email-btn');
+        const toast = document.getElementById('toast');
+        const toastText = document.getElementById('toast-text');
+
+        copyEmailBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                const textArea = document.createElement("textarea");
+                textArea.value = "info@connectwithaymen.online";
+                document.body.appendChild(textArea);
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    
+                    toastText.innerText = currentLang === 'en' ? 'Email copied!' : 'Email copié !';
+                    toast.classList.remove('translate-y-20', 'opacity-0');
+                    
+                    setTimeout(() => {
+                        toast.classList.add('translate-y-20', 'opacity-0');
+                    }, 3000);
+                } catch (err) {
+                    console.error('Oops, unable to copy', err);
+                }
+                document.body.removeChild(textArea);
+            });
+        });
+    </script>
+
+</body>
+</html>
